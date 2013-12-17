@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PlayerControllerDelegate.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController<PlayerControllerDelegate>
+
+-(IBAction)playButtonAction:(id)sender;
+
 
 @end
